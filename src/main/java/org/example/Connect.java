@@ -19,7 +19,9 @@ public class Connect {
             switch (choice){
                 case 1:
                     System.out.println();
-                    operations.createEmployeeTable(connection);
+                    System.out.println("Enter name of table");
+                    String s = sc.next();
+                    operations.createEmployeeTable(connection,s);
                     break;
                 case 2:
                     System.out.println();
